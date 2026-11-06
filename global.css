@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+:root,
+[data-theme="buttercup"] {
+    --theme-name: "Buttercup Sky";
+
+    /* Section Backgrounds */
+    --bg-light: #FFF7D6;
+    /* Cloud Puff */
+    --bg-dark: #1E3246;
+    /* Deep Navy Ink */
+    --bg-banner: #FFE08A;
+    /* Sunwashed Golden Yellow */
+    --bg-header: rgba(255, 247, 214, 0.92);
+    --bg-footer: #FFF7D6;
+    /* Cloud Puff */
+
+    /* Card Backgrounds */
+    --card-light: #FFF7D6;
+    /* Blends seamlessly with background */
+    --card-surface: #FFF9E0;
+    --card-dark: #233C53;
+    /* Dark Navy Card */
+
+    /* Text Colors */
+    --text-on-light: #1E3246;
+    --text-muted-light: #4A637C;
+    --text-subtle-light: #7E97AD;
+    --text-on-dark: #FFF7D6;
+    --text-muted-dark: #AEC4D9;
+    --text-on-banner: #1E3246;
+    --text-muted-banner: #445F7A;
+
+    /* Pastel Preview Box Colors (Matching User Reference Image) */
+    --preview-yellow: #FFE08A;
+    /* Sunwashed Yellow */
+    --preview-blue: #A8C6E7;
+    /* Dewy Blue */
+    --preview-amber: #F4BC5C;
+    /* Warm Honey Amber */
+
+    /* Accents */
+    --accent-blue: #7FA8D6;
+    --accent-yellow: #FFE08A;
+    --accent-italic-light: #6E94BF;
+    --accent-italic-dark: #FFE08A;
+    --accent-italic-banner: #1E3246;
+
+    /* Refined Minimalist Borders */
+    --border-light: rgba(30, 50, 70, 0.16);
+    --border-dark: rgba(255, 247, 214, 0.18);
+    --border-banner: rgba(30, 50, 70, 0.2);
+
+    /* Typography & Structure */
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-mono: "DM Mono", monospace;
+    --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --container-max: 1180px;
+    --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="buttercup"] {
+    --theme-name: "Blue Dust & Prussian";
+
+    /* Section Backgrounds */
+    --bg-light: #FFF7D6;
+    /* Pistacchio Shell */
+    --bg-dark: #1C2F4D;
+    /* Prussian Blue */
+    --bg-banner: #93AEBF;
+    /* Blue Dust */
+    --bg-header: rgba(242, 206, 174, 0.92);
+    --bg-footer: #F2CEAE;
+    /* Pistacchio Shell */
+
+    /* Card Backgrounds */
+    --card-light: #F2CEAE;
+    /* Blends seamlessly with background */
+    --card-surface: #F8DFCA;
+    --card-dark: #243A5E;
+    /* Elevated Prussian Blue Card */
+
+    /* Text Colors */
+    --text-on-light: #1C2F4D;
+    /* Prussian Blue */
+    --text-muted-light: #445973;
+    --text-subtle-light: #6E839D;
+    --text-on-dark: #F2CEAE;
+    /* Pistacchio Shell */
+    --text-muted-dark: #AEC5D6;
+    --text-on-banner: #1C2F4D;
+    /* Prussian Blue */
+    --text-muted-banner: #2E4562;
+
+    /* Pastel Preview Box Colors */
+    --preview-yellow: #D48D91;
+    /* Matte Light Red */
+    --preview-blue: #93AEBF;
+    /* Blue Dust */
+    --preview-amber: #F2CEAE;
+    /* Pistacchio Shell */
+
+    /* Accents */
+    --accent-blue: #93AEBF;
+    /* Blue Dust */
+    --accent-yellow: #D48D91;
+    /* Matte Light Red */
+    --accent-italic-light: #400D01;
+    /* Bean */
+    --accent-italic-dark: #93AEBF;
+    /* Blue Dust */
+    --accent-italic-banner: #400D01;
+    /* Bean */
+
+    /* Refined Minimalist Borders */
+    --border-light: rgba(28, 47, 77, 0.16);
+    --border-dark: rgba(242, 206, 174, 0.18);
+    --border-banner: rgba(28, 47, 77, 0.2);
+
+    /* Typography & Structure */
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-mono: "DM Mono", monospace;
+    --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --container-max: 1180px;
+    --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: var(--bg-light);
+    color: var(--text-on-light);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 1.5px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
