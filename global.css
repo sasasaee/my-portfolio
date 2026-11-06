@@ -59,8 +59,8 @@
     --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-[data-theme="buttercup"] {
-    --theme-name: "Blue Dust & Prussian";
+[data-theme="dawn"] {
+    --theme-name: "Dawn & Rosewood";
 
     /* Section Backgrounds */
     --bg-light: #FFF7D6;
